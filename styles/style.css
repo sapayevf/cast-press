@@ -311,3 +311,146 @@ hr {
   border-radius: 5px;
   background-color: #7247ca;
 }
+
+.menu {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.menu-mobile__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.menu-mobile__header .close {
+  cursor: pointer;
+}
+
+.menu-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  transform: translateY(-100vh);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-mobile.active {
+  transform: translateY(0);
+}
+
+.menu-mobile nav {
+  height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-mobile nav a {
+  font-family: "Source Serif";
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 15.04px;
+  letter-spacing: 0.16em;
+  text-align: left;
+  color: #222222;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .blog {
+    display: none;
+  }
+
+  .header {
+    padding: 0 20px;
+  }
+
+  .woman {
+    width: 300px;
+  }
+
+  .line-white {
+    width: 320px;
+  }
+
+  .line-black {
+    width: 50px;
+  }
+
+  .section-2__title {
+    width: 100%;
+  }
+  .s3-cards {
+    flex-wrap: wrap;
+  }
+  .s3-card {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .menu {
+    display: inline;
+  }
+
+  .s3-card {
+    margin-bottom: 40px;
+  }
+
+  .section-1 h2 {
+    text-align: center;
+    margin-right: 50px;
+  }
+  .section-2__title {
+    margin-right: 20px;
+  }
+  .section-2__title h2 {
+    font-size: 30px;
+  }
+  .section-2__title .primary-text {
+    font-size: 20px;
+    margin-right: 50px;
+  }
+
+  .s6-links {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+
+  .marr {
+    margin-right: 20px;
+  }
+
+  .s6-title {
+    flex-wrap: wrap;
+  }
+
+  .line-s5 {
+    margin-right: 35px;
+  }
+
+  .burger-menu .menu-mobile {
+    display: block;
+  }
+  .menu {
+    display: inline-block;
+  }
+
+  .header .blog {
+    display: none;
+  }
+}
