@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(../assets/fonts/Oswald-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source Serif";
+  src: url(../assets/fonts/SourceSerif4_18pt-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source Serif";
+  src: url(../assets/fonts/SourceSerif4_18pt-SemiBold.ttf);
+  font-weight: 600;
+}
